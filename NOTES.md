@@ -35,3 +35,12 @@ otherwise, the easiest way of creating a table, is to do create it in libreoffic
 an alternative is to export it as a svg (with text converted to path) and import it as vectors into scribus.
 
 a better tables engine is in the working... but i'm not sure it will be really usable before the next stable release will be out.
+
+## When using tables
+
+if you want my feedback as a reader: avoid tables in you document.  
+avoid showing raw numbers, and if you have to, use tabulators.
+
+if your layout does not fit in a tabulators setup, it's likely that the result will be over complicated and a pain to read for most readers.
+
+and, of course, there are documents that need  complex tables, but most would be better without them.
