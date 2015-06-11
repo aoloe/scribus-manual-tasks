@@ -34,6 +34,8 @@ if you really want tables in scribus, there is an entry for it in the insert men
 otherwise, the easiest way of creating a table, is to do create it in libreoffice, export it as an image and load that image (at a big enough resolution, but not huge!) into an image frame.  
 an alternative is to export it as a svg (with text converted to path) and import it as vectors into scribus.
 
+if you know LaTeX, you can also use a render frame to create your table.
+
 a better tables engine is in the working... but i'm not sure it will be really usable before the next stable release will be out.
 
 ## When using tables
