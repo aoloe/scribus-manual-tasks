@@ -17,7 +17,8 @@ If you want a bottom line, you will add it on the following line.
 ### Définition fond de page
 
 scribus ne permet pas de définir une couleur imprimée sur toute la page. les bons designers achètent du papier de la bonne couleur!  
-scribus supporte ce workflow en te permettant de définir la couleur de font dans les propriétés du document!
+scribus supporte ce workflow en te permettant de définir la couleur de font dans les propriétés du document!  
+cette couleur ne sera pas imprimée.
 
 et si tu veux vraiment vider ton toner, tu peux toujours mettre un rectangle de la bonne couleur dans le gabarit (ou dans un calque en arrière plan d'une page spécifique)
 
