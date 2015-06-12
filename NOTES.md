@@ -12,6 +12,15 @@ There is a workaround for adding horizontal lines inside of a text frame: to def
 You should define it in a new style that you will apply to the paragraph before the one where you want to see the top line.  
 If you want a bottom line, you will add it on the following line.
 
+## Pages
+
+### Définition fond de page
+
+scribus ne permet pas de définir une couleur imprimée sur toute la page. les bons designers achètent du papier de la bonne couleur!  
+scribus supporte ce workflow en te permettant de définir la couleur de font dans les propriétés du document!
+
+et si tu veux vraiment vider ton toner, tu peux toujours mettre un rectangle de la bonne couleur dans le gabarit (ou dans un calque en arrière plan d'une page spécifique)
+
 ## Tables
 
 ### Can you paste tables from RTF or Docx to Scribus?
