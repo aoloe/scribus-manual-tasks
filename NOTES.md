@@ -56,3 +56,13 @@ avoid showing raw numbers, and if you have to, use tabulators.
 if your layout does not fit in a tabulators setup, it's likely that the result will be over complicated and a pain to read for most readers.
 
 and, of course, there are documents that need  complex tables, but most would be better without them.
+
+## PDF output
+
+### Making text selectable
+
+Depending on how how the text is laydout on the page and what formatting he has used, scribus will not place the text as a stream on the page, but as individual (group of) glyphs.
+
+There are tools like Ghostscript, PDF viewers, or other tools to make the text better selectable.
+
+Scribus is a dtp tool made for printing on proffessional presses and distributing the pdf on the internet is considered (only) a side product... (and the PDF format has also been created for printing and is not the optimal format for distributing content on the web... but, of course, you cannot always choose perfection :-)
