@@ -12,6 +12,17 @@ There is a workaround for adding horizontal lines inside of a text frame: to def
 You should define it in a new style that you will apply to the paragraph before the one where you want to see the top line.  
 If you want a bottom line, you will add it on the following line.
 
+## Images
+
+### Centering images
+
+There is one thing Scribus can't do: aligning images inside of a frame.
+
+But what it can do is:
+
+- Make the frame the same size/shape as the image: `Right-click > Adjust Frame to Image`.
+- Align the image frame relative to other frames or against the Page by using `Windows > Align & Distribute` palette.
+
 ## Pages
 
 ### Définition fond de page
