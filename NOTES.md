@@ -77,3 +77,71 @@ Depending on how how the text is laydout on the page and what formatting he has 
 There are tools like Ghostscript, PDF viewers, or other tools to make the text better selectable.
 
 Scribus is a dtp tool made for printing on proffessional presses and distributing the pdf on the internet is considered (only) a side product... (and the PDF format has also been created for printing and is not the optimal format for distributing content on the web... but, of course, you cannot always choose perfection :-)
+
+## Syntax highliting for code
+
+### Load highlighted code into a text frame
+
+- Generate the highlighted code in html form
+  - Some text editors can do that, otherwise
+  - Paste your code in an online service (like <https://tohtml.com/>)
+  - Copy the rendered text
+- Paste the highlighted text into a Libreoffice Writer document
+- Save the .odt file
+- Load the .odt file in a text frame in Scribus.
+
+### Use the render frames with Latex
+
+Lars Behrens on january 6, 2017 in the scribus mailing list
+
+- Prerequisites: Of course you need LaTeX installed, plus the "listings"-package which may or may not be in your default LaTeX installation, depending on your environment.
+- In Scribus insert a render frame (shortcut "D")
+- Right-click on the frame and choose "Edit Source"
+- On the "Fonts/Headers" tab insert the following in the "Additional Headers" text field on the right:
+~~~
+\usepackage{listings}
+\usepackage{color}
+\lstset{ %
+backgroundcolor=\color{white},  % choose the background color
+basicstyle=\footnotesize,       % size of fonts used for the code
+breaklines=true,               % automatic line breaking only whitespace
+captionpos=b,                   % sets the caption-position to bottom
+commentstyle=\color{green},     % comment style
+escapeinside={\%*}{*)},      % if you want to add LaTeX within your code
+keywordstyle=\color{blue},      % keyword style
+stringstyle=\color{red},        % string literal style
+}
+~~~
+
+  The variables in the lastset section define how your source code examples will be displayed, find details in the mentioned doc file "listings.pdf".
+- Remove the example text in the code field on the left
+- Now you can insert your code examples in the text field on the left.  
+  Make sure that you choose the right language in the "[language=XXX]" tag. A short example in Java:
+
+
+\section{Java}
+\begin{lstlisting}[language=java]
+class HelloWorldApp {
+    public static void main(String[] args) {
+        System.out.println("Hello World!"); // Display the string.
+        for (int i = 0; i < 100; ++i) {
+            System.out.println(i);
+        }
+    }
+}
+\end{lstlisting}
+~~~
+
+As you can see, basically you just have to surround your code example with
+
+~~~
+\begin{lstlisting}[language=YourLanguage]
+
+\end{lstlisting}
+~~~
+
+- by clicking the "Update" button at the bottom of the render frame dialog you can check if your code is rendered correctly
+- make sure to click "Ok" when your done inserting your example code, otherwise your input might get lost
+- you can edit your code at any time by right clicking the render frame again and clicking "Edit Source"
+- if you need more render frames just copy an existing one and edit it, so that you won't have to go through the process of inserting the header lines again.
+
