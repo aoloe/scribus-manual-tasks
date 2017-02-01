@@ -118,7 +118,7 @@ stringstyle=\color{red},        % string literal style
 - Now you can insert your code examples in the text field on the left.  
   Make sure that you choose the right language in the "[language=XXX]" tag. A short example in Java:
 
-
+~~~~
 \section{Java}
 \begin{lstlisting}[language=java]
 class HelloWorldApp {
