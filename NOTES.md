@@ -83,7 +83,7 @@ Scribus is a dtp tool made for printing on proffessional presses and distributin
 ### Load highlighted code into a text frame
 
 - Generate the highlighted code in html form
-  - Some text editors can do that, otherwise
+  - Some text editors can do that, otherwise (from Vim you can use the `:TOhtml` command to create an html version of the higlighted file: You can open it with Libreoffice but not with Scribus)
   - Paste your code in an online service (like <https://tohtml.com/>)
   - Copy the rendered text
 - Paste the highlighted text into a Libreoffice Writer document
